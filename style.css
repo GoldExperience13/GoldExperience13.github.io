@@ -1,0 +1,142 @@
+body {
+    font-family: 'Radio Canada Big', sans-serif;
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 0;
+    transition: background-color 0.3s, color 0.3s;
+    display: flex; 
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+    background-color: #333;
+}
+
+h1 {
+    font-size: 2.5rem;
+    color: #d8ce02e6;
+    text-shadow: yellow 0.1rem 0.1rem;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-left: 1rem;
+}
+
+nav ul li a {
+    color: #49c5b6;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+nav ul li button {
+    background: none;
+    border: none;
+    color: #49c5b6;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.heading {
+    color: #49c5b6;
+    text-shadow: darkgray 0.1rem 0.1rem;
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.about_me {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem;
+}
+
+.about-me-text {
+    flex: 1;
+    padding: 1rem;
+}
+
+.portrait {
+    max-width: 50%;
+    border-radius: 10px;
+}
+
+.projects {
+    text-align: center;
+    margin: 2rem;
+}
+
+.project {
+    margin: 1rem;
+    text-align: left;
+}
+
+.project-title h3 {
+    display: inline;
+    cursor: pointer;
+}
+
+.image {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    margin-top: 1rem;
+}
+
+.skills {
+    text-align: center;
+    margin: 2rem;
+}
+
+.skill_icons img {
+    height: 3rem;
+    margin: 1rem;
+    transition: transform 0.3s;
+}
+
+.skill_icons img:hover {
+    transform: scale(1.2);
+}
+
+footer {
+    text-align: center;
+    background-color: #333;
+    position: absolute;
+    width: 97%;
+    height: 3rem;
+}
+
+.dark-mode {
+    background-color: #fff;
+    color: #000;
+}
+
+.dark-mode header,
+.dark-mode footer {
+    background-color: #ccc;
+}
+
+.dark-mode nav ul li a,
+.dark-mode nav ul li button {
+    color: #007bff;
+}
+
+footer h4 {
+    
+    margin: 1rem
+}

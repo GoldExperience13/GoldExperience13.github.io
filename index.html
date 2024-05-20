@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lickaboo Hippyton Portfolio</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Radio+Canada+Big:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <h1 id="title">Lickaboo Hippyton</h1>
+        <nav>
+            <ul>
+                <li><a href="#">About me</a></li>
+                <li><a href="#">Projects</a></li>
+                <li><a href="#">Skills</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><button id="switch" onclick="myFunction()">Dark Mode</button></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="about">
+            <div class="about_me">
+                <div class="about-me-text">
+                    <h2 class="heading">About Me</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam sed nunc nunc. Curabitur nec interdum dolor, venenatis mollis tellus. Duis orci nibh, tristique in sollicitudin sed, vestibulum in lorem. Morbi mattis eleifend magna. Integer sollicitudin sem a pharetra dapibus. Ut tempus purus vel vestibulum luctus. Maecenas finibus orci ante. Morbi eu pharetra purus. Integer purus neque, cursus nec diam ut, viverra pulvinar massa. Donec nec est varius, rhoncus mauris id, lacinia leo. Praesent ut pellentesque dolor. Etiam ac iaculis eros, lacinia suscipit nisi. Curabitur egestas nisi ac lorem finibus, sed molestie dui malesuada. Mauris quis ultrices lorem. Nullam ex urna, dapibus eget tortor a, tincidunt vulputate mauris. Integer sed semper augue. Praesent posuere velit scelerisque scelerisque viverra. Vivamus iaculis odio at posuere malesuada. Vivamus ut ante eu diam laoreet varius. Etiam pharetra euismod ipsum, et eleifend turpis finibus vel. Nullam id vehicula diam. Aliquam pellentesque in justo quis congue. Aenean commodo tempus quam ac imperdiet.</p>
+                </div>
+                <img src="https://img.freepik.com/premium-photo/portrait-male-programmer-office-many-computers-monitors-background_909812-142.jpg" class="portrait">
+            </div>
+        </section>
+
+        <section class="projects">
+            <h2 class="heading">Projects</h2>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>First project</h3>
+                </summary>
+                <img class="image" src="https://techcrunch.com/wp-content/uploads/2015/04/codecode.jpg?w=1024">
+                <p class="p_description">I can code so much. Check it out!</p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Second project</h3>
+                </summary>
+                <img class="image" src="https://www.economist.com/sites/default/files/images/2015/09/blogs/economist-explains/code2.png">
+                <p class="p_description">So much I can code. You can't stop me! I'm a hacker!</p>
+            </details>
+            <details class="project">
+                <summary class="project-title">
+                    <h3>Third project</h3>
+                </summary>
+                <img src="https://www.indiewire.com/wp-content/uploads/2017/10/matrix-code.jpg" class="image">
+                <p class="p_description">My eyes have opened. I can see all.</p>
+            </details>    
+        </section>
+        
+        <section class="skills">
+            <h2 class="heading">Skills</h2>
+            <div class="skill_icons">
+                <img src="https://www.w3.org/html/logo/downloads/HTML5_1Color_White.png" id="htmlogo" alt="HTML5 logo">
+                <img src="https://w7.pngwing.com/pngs/1008/538/png-transparent-web-development-html-cascading-style-sheets-css3-world-wide-web-angle-web-design-logo-thumbnail.png" id="csslogo" alt="CSS3 logo">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" id="jslogo" alt="JavaScript logo">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQdDEFsrSevbFa_KRsTarDlj3CEMO7rBf4gBcfF31KbBg&sg" id="gitlogo" alt="Git logo">
+                <img src="./vecteezy_github-logo-git-hub-icon-with-text-on-white-and-black_17119660.jpg" id="githublogo" alt="GitHub logo">
+                <img src="https://go.dev/blog/go-brand/Go-Logo/PNG/Go-Logo_White.png" id="gologo" alt="Go logo">
+            </div>
+        </section>
+
+        <footer>
+            <h4>Made in Estonia</h4>
+        </footer>
+    </main>
+    <script>
+        function myFunction() {
+            document.body.classList.toggle("dark-mode");
+        }
+    </script>
+</body>
+</html>
